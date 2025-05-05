@@ -36,11 +36,14 @@
             this.listUndo = new System.Windows.Forms.ListBox();
             this.btnUndo = new System.Windows.Forms.Button();
             this.btnRedo_Click = new System.Windows.Forms.Button();
+            this.comboBoxFont = new System.Windows.Forms.ComboBox();
+            this.comboBoxSize = new System.Windows.Forms.ComboBox();
+            this.comboBoxStyle = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnopen
             // 
-            this.btnopen.Location = new System.Drawing.Point(32, 22);
+            this.btnopen.Location = new System.Drawing.Point(701, 91);
             this.btnopen.Name = "btnopen";
             this.btnopen.Size = new System.Drawing.Size(102, 46);
             this.btnopen.TabIndex = 0;
@@ -50,7 +53,7 @@
             // 
             // btnsave
             // 
-            this.btnsave.Location = new System.Drawing.Point(152, 22);
+            this.btnsave.Location = new System.Drawing.Point(701, 143);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(106, 46);
             this.btnsave.TabIndex = 1;
@@ -60,9 +63,9 @@
             // 
             // rtbText
             // 
-            this.rtbText.Location = new System.Drawing.Point(32, 90);
+            this.rtbText.Location = new System.Drawing.Point(32, 91);
             this.rtbText.Name = "rtbText";
-            this.rtbText.Size = new System.Drawing.Size(654, 416);
+            this.rtbText.Size = new System.Drawing.Size(654, 415);
             this.rtbText.TabIndex = 2;
             this.rtbText.Text = "";
             this.rtbText.TextChanged += new System.EventHandler(this.rtbText_TextChanged);
@@ -75,14 +78,14 @@
             // 
             this.listUndo.FormattingEnabled = true;
             this.listUndo.ItemHeight = 15;
-            this.listUndo.Location = new System.Drawing.Point(692, 90);
+            this.listUndo.Location = new System.Drawing.Point(692, 195);
             this.listUndo.Name = "listUndo";
-            this.listUndo.Size = new System.Drawing.Size(236, 409);
+            this.listUndo.Size = new System.Drawing.Size(236, 304);
             this.listUndo.TabIndex = 3;
             // 
             // btnUndo
             // 
-            this.btnUndo.Location = new System.Drawing.Point(278, 22);
+            this.btnUndo.Location = new System.Drawing.Point(822, 91);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.Size = new System.Drawing.Size(106, 46);
             this.btnUndo.TabIndex = 4;
@@ -92,7 +95,7 @@
             // 
             // btnRedo_Click
             // 
-            this.btnRedo_Click.Location = new System.Drawing.Point(409, 22);
+            this.btnRedo_Click.Location = new System.Drawing.Point(822, 143);
             this.btnRedo_Click.Name = "btnRedo_Click";
             this.btnRedo_Click.Size = new System.Drawing.Size(106, 46);
             this.btnRedo_Click.TabIndex = 5;
@@ -100,11 +103,38 @@
             this.btnRedo_Click.UseVisualStyleBackColor = true;
             this.btnRedo_Click.Click += new System.EventHandler(this.btnRedo_Click_Click);
             // 
+            // comboBoxFont
+            // 
+            this.comboBoxFont.FormattingEnabled = true;
+            this.comboBoxFont.Location = new System.Drawing.Point(32, 44);
+            this.comboBoxFont.Name = "comboBoxFont";
+            this.comboBoxFont.Size = new System.Drawing.Size(210, 23);
+            this.comboBoxFont.TabIndex = 6;
+            // 
+            // comboBoxSize
+            // 
+            this.comboBoxSize.FormattingEnabled = true;
+            this.comboBoxSize.Location = new System.Drawing.Point(270, 44);
+            this.comboBoxSize.Name = "comboBoxSize";
+            this.comboBoxSize.Size = new System.Drawing.Size(107, 23);
+            this.comboBoxSize.TabIndex = 7;
+            // 
+            // comboBoxStyle
+            // 
+            this.comboBoxStyle.FormattingEnabled = true;
+            this.comboBoxStyle.Location = new System.Drawing.Point(399, 44);
+            this.comboBoxStyle.Name = "comboBoxStyle";
+            this.comboBoxStyle.Size = new System.Drawing.Size(128, 23);
+            this.comboBoxStyle.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(963, 547);
+            this.Controls.Add(this.comboBoxStyle);
+            this.Controls.Add(this.comboBoxSize);
+            this.Controls.Add(this.comboBoxFont);
             this.Controls.Add(this.btnRedo_Click);
             this.Controls.Add(this.btnUndo);
             this.Controls.Add(this.listUndo);
@@ -127,6 +157,9 @@
         private System.Windows.Forms.ListBox listUndo;
         private System.Windows.Forms.Button btnUndo;
         private System.Windows.Forms.Button btnRedo_Click;
+        private System.Windows.Forms.ComboBox comboBoxFont;
+        private System.Windows.Forms.ComboBox comboBoxSize;
+        private System.Windows.Forms.ComboBox comboBoxStyle;
     }
 }
 
